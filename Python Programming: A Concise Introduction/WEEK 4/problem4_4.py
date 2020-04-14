@@ -74,8 +74,8 @@ def show_phone(phone, index):
     print(outputstr.format(index, phone[name_pos], phone[phone_pos]))
 
 def reorder_phones():
-    global phones       # this insures that we use the one at the top
-    pass # replace this pass (a do-nothing) statement with your code
+    global phones       
+    pass 
     phones.sort()
 
 def create_phone():
@@ -113,7 +113,7 @@ def main_loop():
             continue
         if choice == 'q':
             print( "Exiting...")
-            break     # jump out of while loop
+            break    
         elif choice == 'n':
             create_phone()
         elif choice == 'd':
@@ -132,9 +132,6 @@ def main_loop():
             print("Invalid choice.")
             
     save_phone_list()
-    
-
-# The following makes this program start running at main_loop() 
-# when executed as a stand-alone program.    
+  
 if __name__ == '__main__':
     main_loop()
